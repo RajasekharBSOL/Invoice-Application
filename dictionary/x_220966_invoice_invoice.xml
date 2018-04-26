@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="task" label="invoice" max_length="40" name="x_220966_invoice_invoice" sizeclass="4" type="collection">
+    <element extends="task" label="invoice" max_length="40" name="x_220966_invoice_invoice" type="collection">
         <element label="Assigned Group" max_length="32" name="u_assigned_group" reference="sys_user_group" type="reference"/>
         <element label="Assigned Persion" max_length="32" name="u_assigned_persion" reference="sys_user" type="reference"/>
         <element label="Assign to persion" max_length="40" name="u_assign_to_a_persion" type="boolean"/>

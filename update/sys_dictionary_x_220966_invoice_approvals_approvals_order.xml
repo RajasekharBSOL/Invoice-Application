@@ -52,15 +52,15 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-26 07:08:54</sys_created_on>
-        <sys_id>081a7148dbbd13003beb5ec0cf961916</sys_id>
+        <sys_id>6f4d8c104f351300ed604ebf9310c72d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Order</sys_name>
         <sys_package display_value="Invoice Application" source="x_220966_invoice">460739e3db2113003beb5ec0cf961939</sys_package>
         <sys_policy/>
         <sys_scope display_value="Invoice Application">460739e3db2113003beb5ec0cf961939</sys_scope>
         <sys_update_name>sys_dictionary_x_220966_invoice_approvals_approvals_order</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-26 07:08:54</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-04-26 17:51:33</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

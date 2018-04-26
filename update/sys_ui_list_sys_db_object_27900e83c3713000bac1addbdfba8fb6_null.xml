@@ -18,14 +18,14 @@
             <sys_domain_path>/</sys_domain_path>
             <sys_id>8ede2d37dbe513003beb5ec0cf9619d1</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name/>
-            <sys_package/>
+            <sys_name>sys_security_acl</sys_name>
+            <sys_package display_value="Invoice Application" source="x_220966_invoice">460739e3db2113003beb5ec0cf961939</sys_package>
             <sys_policy/>
             <sys_scope display_value="Invoice Application">460739e3db2113003beb5ec0cf961939</sys_scope>
-            <sys_update_name/>
+            <sys_update_name>sys_ui_list_sys_db_object_27900e83c3713000bac1addbdfba8fb6_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2018-04-25 11:40:41</sys_updated_on>
-            <sys_user display_value="Admin Developer">6816f79cc0a8016401c5a33be04be441</sys_user>
+            <sys_user display_value="Rajasekhar Kothaluru">6816f79cc0a8016401c5a33be04be441</sys_user>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_list>
