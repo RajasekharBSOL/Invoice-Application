@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="invoice" max_length="40" name="x_220966_invoice_invoice" sizeclass="4" type="collection">
+        <element label="Assigned Group" max_length="32" name="u_assigned_group" reference="sys_user_group" type="reference"/>
+        <element label="Assigned Persion" max_length="32" name="u_assigned_persion" reference="sys_user" type="reference"/>
+        <element label="Assign to persion" max_length="40" name="u_assign_to_a_persion" type="boolean"/>
+        <element label="Assign to Group" max_length="40" name="u_assign_to_group" type="boolean"/>
+        <element label="Due Date" mandatory="true" max_length="40" name="u_due_date" type="glide_date"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Invoice Amount" mandatory="true" max_length="20" name="u_invoice_amount" type="price"/>
+        <element label="Invoice For" mandatory="true" max_length="32" name="u_invoice_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Open" label="Invoice Status" max_length="40" name="u_invoice_status" type="string">
+            <choice>
+                <element label="Open" sequence="0" value="Open"/>
+                <element label="Generated" sequence="1" value="Generated"/>
+                <element label="Awaiting" sequence="2" value="Awaiting"/>
+                <element label="Approved" sequence="3" value="Approved"/>
+                <element label="Rejected" sequence="4" value="Rejected"/>
+                <element label="Approval Settled" sequence="5" value="Approval Settled"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Invoice Type" max_length="40" name="u_invoice_type" type="string">
+            <choice>
+                <element label="Spot Invoice" sequence="0" value="Spot Invoice"/>
+                <element label="Regular Invoice" sequence="1" value="Regular Invoice"/>
+            </choice>
+        </element>
+        <element label="New Reference" max_length="32" name="u_reference_3" reference="cmdb_ci_appl_dot_net" type="reference"/>
+    </element>
+</database>

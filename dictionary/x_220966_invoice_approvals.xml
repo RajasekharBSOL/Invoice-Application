@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Approvals" max_length="40" name="x_220966_invoice_approvals" type="collection">
+        <element label="Approver" max_length="32" name="approvals_approvar" reference="sys_user" type="reference"/>
+        <element label="Approvals Invoice Number" max_length="20" name="approvals_invoice_number" type="string"/>
+        <element label="Order" max_length="10" name="approvals_order" type="integer"/>
+        <element choice="1" label="Priority" max_length="40" name="approvals_priority" type="choice">
+            <choice>
+                <element label="Mandatory" sequence="0" value="Mandatory"/>
+                <element label="Either One" sequence="1" value="Either One"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="approvals_approvar"/>
+        </index>
+    </element>
+</database>
