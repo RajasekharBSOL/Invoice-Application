@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Selected Items" max_length="40" name="x_220966_invoice_selected_items" type="collection">
+        <element label="Invoice Number" max_length="20" name="items_invoice_number" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Cost" max_length="40" name="selected_item_cost" type="float"/>
+        <element label="Item Name" max_length="20" name="selected_item_name" type="string"/>
+    </element>
+</database>

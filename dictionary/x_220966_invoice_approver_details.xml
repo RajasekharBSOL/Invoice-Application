@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Approver Details" max_length="40" name="x_220966_invoice_approver_details" type="collection">
+        <element choice="1" label="Execution" max_length="40" name="approver_execution" type="choice">
+            <choice>
+                <element label="Either One" value="either_one"/>
+                <element label="Mandatory" value="Mandatory"/>
+            </choice>
+        </element>
+        <element label="Invoice Number" max_length="20" name="approver_invoice_number" type="string"/>
+        <element label="order" max_length="40" name="approver_order" type="integer"/>
+        <element label="Invoice Approver" max_length="32" name="invoice_approver" reference="sys_user" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="invoice_approver"/>
+        </index>
+    </element>
+</database>

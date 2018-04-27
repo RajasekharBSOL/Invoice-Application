@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_export_definition">
+    <sys_export_definition action="INSERT_OR_UPDATE">
+        <field_list>approval_set,assignment_group,activity_due,approval,assigned_to,active,business_duration,additional_assignee_list,number,approval_history</field_list>
+        <filter/>
+        <name>TestInvoicesExport</name>
+        <sys_class_name>sys_export_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-26 18:48:38</sys_created_on>
+        <sys_id>f42a1454dbf153003beb5ec0cf96194a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>TestInvoicesExport</sys_name>
+        <sys_package display_value="Invoice Application" source="x_220966_invoice">460739e3db2113003beb5ec0cf961939</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Invoice Application">460739e3db2113003beb5ec0cf961939</sys_scope>
+        <sys_update_name>sys_export_definition_f42a1454dbf153003beb5ec0cf96194a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-26 18:48:38</sys_updated_on>
+        <table_name>x_220966_invoice_invoice</table_name>
+        <view display_value="Exp_df42a1454dbf153003beb5ec0cf96194a" name="exp_df42a1454dbf153003beb5ec0cf96194a">6c6a1890dbf153003beb5ec0cf961972</view>
+    </sys_export_definition>
+</record_update>

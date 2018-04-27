@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>exp_d68ad1454dbf153003beb5ec0cf961950</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-26 19:02:49</sys_created_on>
+        <sys_id>ecad1454dbf153003beb5ec0cf961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Exp_d68ad1454dbf153003beb5ec0cf961950</sys_name>
+        <sys_package display_value="Invoice Application" source="x_220966_invoice">460739e3db2113003beb5ec0cf961939</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Invoice Application">460739e3db2113003beb5ec0cf961939</sys_scope>
+        <sys_update_name>sys_ui_view_ecad1454dbf153003beb5ec0cf961950</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-26 19:02:49</sys_updated_on>
+        <title>Exp_d68ad1454dbf153003beb5ec0cf961950</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="items_invoice_number" label="Invoice Number" language="en" table="x_220966_invoice_selected_items">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>items_invoice_number</element>
+            <help/>
+            <hint/>
+            <label>Invoice Number</label>
+            <language>en</language>
+            <name>x_220966_invoice_selected_items</name>
+            <plural>Invoice Numbers</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-27 03:31:07</sys_created_on>
+            <sys_id>d2f15618dbb553003beb5ec0cf961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Invoice Number</sys_name>
+            <sys_package display_value="Invoice Application" source="x_220966_invoice">460739e3db2113003beb5ec0cf961939</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Invoice Application">460739e3db2113003beb5ec0cf961939</sys_scope>
+            <sys_update_name>sys_documentation_x_220966_invoice_selected_items_items_invoice_number_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-27 03:31:07</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
