@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_documentation element="" label="Approvals" language="en" table="x_220966_invoice_approvals">
+    <sys_documentation element="selected_items_quantity" label="quantity" language="en" table="x_220966_invoice_selected_items">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element/>
+            <element>selected_items_quantity</element>
             <help/>
             <hint/>
-            <label>Approvals</label>
+            <label>quantity</label>
             <language>en</language>
-            <name>x_220966_invoice_approvals</name>
-            <plural>Approvals</plural>
+            <name>x_220966_invoice_selected_items</name>
+            <plural>quantities</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-26 07:01:55</sys_created_on>
-            <sys_id>9ca83d48dbbd13003beb5ec0cf9619f9</sys_id>
+            <sys_created_on>2018-04-27 06:00:27</sys_created_on>
+            <sys_id>f524f618dbf553003beb5ec0cf96193d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>Approvals</sys_name>
+            <sys_name>quantity</sys_name>
             <sys_package display_value="Invoice Application" source="x_220966_invoice">460739e3db2113003beb5ec0cf961939</sys_package>
             <sys_policy/>
             <sys_scope display_value="Invoice Application">460739e3db2113003beb5ec0cf961939</sys_scope>
-            <sys_update_name>sys_documentation_x_220966_invoice_approvals__en</sys_update_name>
+            <sys_update_name>sys_documentation_x_220966_invoice_selected_items_selected_items_quantity_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-26 07:01:55</sys_updated_on>
+            <sys_updated_on>2018-04-27 06:00:27</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
