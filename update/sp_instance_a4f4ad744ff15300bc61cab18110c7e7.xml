@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>2</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">66dcf79c4ff51300bc61cab18110c79b</sp_column>
+        <sp_widget display_value="link-button">abc50de6d702120023c84f80de61036a</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-28 13:31:21</sys_created_on>
+        <sys_id>a4f4ad744ff15300bc61cab18110c7e7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Invoice Application" source="x_220966_invoice">460739e3db2113003beb5ec0cf961939</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Invoice Application">460739e3db2113003beb5ec0cf961939</sys_scope>
+        <sys_update_name>sp_instance_a4f4ad744ff15300bc61cab18110c7e7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-29 12:40:54</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"href": {
+		"value": "invoice_index",
+		"displayValue": "invoice_index"
+	},
+	"button_text": {
+		"value": "Back Button",
+		"displayValue": "Back Button"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=a4f4ad744ff15300bc61cab18110c7e7"/>
+</record_update>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+	 c.data.tot1=0;
+c.prepareInvoice=function(){
+var URL="?id=create_invoice";
+top.window.location=URL;
+}
+
+c.getTotal=function(item){
+	c.data.tot1=0;
+	for(var i = 0;i< item.length;i++){
+		if(item[i].check == true){
+   c.data.tot1+=parseFloat(item[i].item_cost.replace(/\,/g,''));
+		//alert("tot1="+tot1);	
+		}
+	}
+	return c.data.tot1;
+	//alert("this is the total"+c.data.tot1)
+}
+//To get selected Items
+	c.SelectedItems = function(item){
+	console.log("Received Items ",item);
+		localStorage.setItem('Amount',item.item_cost);
+		c.data = item.item_cost;
+		console.log("Data",c.data);
+	}
+		
+	var tot = 0;
+	
+	c.checkData = function(item){
+		console.log("DatA",item);
+		
+		for(var i = 0;i< item.length;i++){
+			if(item[i].check == true){
+				console.log("Data in loop" ,item[i].item_cost);
+					console.log("value",tot);
+				tot = tot + item[i].item_cost;
+				
+				console.log("c.total Value",tot);
+			}
+			
+		}
+		
+		
+	}
+	
+	c.dataCheck = function(data){
+		console.log("Load Data",data);
+		c.total = data.item_cost;
+		console.log("Total",c.total);
+		
+	var tot=0;
+		tot+=c.total;
+		console.log("tot",tot);
+	}
+	
+	
+	
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>invoice_preparation1</id>
+        <internal>false</internal>
+        <link/>
+        <name>invoice preparation1</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[
+(function(){
+//create an array to populate without notes
+data.items=[];
+var noteGR=new GlideRecord('x_220966_invoice_item_details');
+noteGR.query();
+
+while(noteGR.next())
+{
+  var noteObj={};
+//use service portal helper method to get some display values
+$sp.getRecordDisplayValues(noteObj, noteGR,'number,item_name,item_cost');
+//push the populated obj into the array
+data.items.push(noteObj);
+}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-30 06:59:18</sys_created_on>
+        <sys_id>496eded14f759300bc61cab18110c7e0</sys_id>
+        <sys_mod_count>80</sys_mod_count>
+        <sys_name>invoice preparation1</sys_name>
+        <sys_package display_value="Invoice Application" source="x_220966_invoice">460739e3db2113003beb5ec0cf961939</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Invoice Application">460739e3db2113003beb5ec0cf961939</sys_scope>
+        <sys_update_name>sp_widget_496eded14f759300bc61cab18110c7e0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-30 08:10:06</sys_updated_on>
+        <template><![CDATA[
+ <h2>
+    Select Items From the list
+  </h2> 
+  
+  <div class = "jumbotron">
+    <table name="items" class="table table-responsive table-striped table-hover table-bordered bg-white-only table-sm">
+      <tr>
+      <th> Item Number</th>
+      <th> Item Name</th>
+      <th> Item Amount</th>  
+        <th> Select Items</th>
+      <!--  <th>Select</th>-->
+       
+      </tr>
+      
+      <tr ng-repeat = "item in data.items" >
+         <td> {{item.number}}</td>
+      <td> {{item.item_name}}</td>
+        <td>{{item.item_cost}}</td>
+        <td><input type="checkbox" ng-model="item.check" ng-change="c.checkData(data.items)" /></td>
+   		<!--	<td><button type="button" class="btn btn-primary btn-xs"> Continue</button></td> -->
+</tr>
+      
+</table>
+    <table>
+     <tr>
+        <td>
+          <input class="btn btn-primary btn-block"  ng-click="c.getTotal(data.items)" type="button" value="Prepare Invoice" style="width:150px;">
+        </td><td>&nbsp;</td>
+            
+   </table>
+    Item total &emsp;${{c.data.tot1}}
+    <table>
+     <tr>
+        <td>
+          <input class="btn btn-primary btn-block" ng-click="c.prepareInvoice()" type="submit" value="Prepare Invoice" style="width:150px;">
+        </td><td>&nbsp;</td>
+            
+   </table>
+      </div>]]></template>
+    </sp_widget>
+</record_update>

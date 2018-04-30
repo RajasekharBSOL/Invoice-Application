@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_portal">
+    <sp_portal action="INSERT_OR_UPDATE">
+        <css_variables/>
+        <default>false</default>
+        <homepage display_value="index">46cc384147532100ba13a5554ee49009</homepage>
+        <icon/>
+        <kb_knowledge_base/>
+        <kb_knowledge_page/>
+        <login_page/>
+        <logo/>
+        <notfound_page/>
+        <quick_start_config/>
+        <sc_catalog/>
+        <sc_catalog_page/>
+        <sc_category_page/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu display_value="SP Header Menu">d150fd31cb10020000f8d856634c9ce6</sp_rectangle_menu>
+        <sqanda_knowledge_base/>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 06:45:04</sys_created_on>
+        <sys_id>e84e7e1c4f751300bc61cab18110c7eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create a new page</sys_name>
+        <sys_package display_value="Invoice Application" source="x_220966_invoice">460739e3db2113003beb5ec0cf961939</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Invoice Application">460739e3db2113003beb5ec0cf961939</sys_scope>
+        <sys_update_name>sp_portal_e84e7e1c4f751300bc61cab18110c7eb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-27 06:45:04</sys_updated_on>
+        <theme display_value="Stock - High Contrast">f84873986711320023c82e08f585ef6a</theme>
+        <title>Create a new page</title>
+        <url_suffix>c_index</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=e84e7e1c4f751300bc61cab18110c7eb"/>
+</record_update>

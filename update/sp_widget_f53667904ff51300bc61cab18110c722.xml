@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope){
+var c=this;
+	c.data.u_invoice_amount=localStorage.getItem('total1');
+c.addItem=function(){
+c.server.update().then(function(response){
+c.data = {};
+})
+}
+
+c.modify=function(){
+	//alert("hello!! Why did you clicked me ");
+  var URL = "?id=invoice_app_index";
+  top.window.location = URL;
+}
+
+c.setPath=function(){
+	alert("You want to Set Path? ");
+		this.targetPageID = (c.options.sp_page) ? "&target_page_id=" + c.options.sp_page : "";
+}
+
+c.submitForApproval=function(){
+	alert("Submit for Approval ");
+		this.targetPageID = (c.options.sp_page) ? "&target_page_id=" + c.options.sp_page : "";
+}
+
+/*c.getAmount=function(){
+	alert("i am here");
+	var aValue = storage.getItem('total1');
+	c.data.u_invoice_amount=aValue;
+	
+}*/
+
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>invoice_form</id>
+        <internal>false</internal>
+        <link/>
+        <name>Invoice Form</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function(){
+if(!input)
+return;
+var gr=new GlideRecord('x_220966_invoice_invoice');
+gr.initialize();
+gr.u_invoice_type=input.u_invoice_type;
+gr.u_invoice_amount=input.u_invoice_amount;
+gr.short_description=input.short_description;
+gr.insert();
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 09:39:11</sys_created_on>
+        <sys_id>f53667904ff51300bc61cab18110c722</sys_id>
+        <sys_mod_count>124</sys_mod_count>
+        <sys_name>Invoice Form</sys_name>
+        <sys_package display_value="Invoice Application" source="x_220966_invoice">460739e3db2113003beb5ec0cf961939</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Invoice Application">460739e3db2113003beb5ec0cf961939</sys_scope>
+        <sys_update_name>sp_widget_f53667904ff51300bc61cab18110c722</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-30 09:36:48</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="form-group"> 
+    <table  onload="getAmount()">
+      <tr><td>
+        <label>Invoice Type</label><br>
+         <select class="form-control" ng-model="c.data.u_invoice_type" name="InvoiceType" style="width:200px; height:35px;">
+           <option value="Spot Invoice">Spot Invoice</option>
+          <option value="Regular Invoice">Regular Invoice</option>
+     </select>
+        </td></tr>
+         <tr>
+           <td>
+              <label>Invoice Amount</label>
+              <input class="form-control" ng-model="c.data.u_invoice_amount" style="width:200px;"  readonly><span><a href="?id=prepare_invoice">Link</a></span>
+          </td>
+      </tr>
+      <tr>
+         <td>
+           <label>Description</label>
+              <input class="form-control" ng-model="c.data.short_description" style="width:200px;">
+         </td>
+     </tr>
+      
+    </table>
+     <br/><br/> 
+      Total {{c.total1}}
+     
+   <table>
+     <tr >
+        <td>
+          <input class="btn btn-primary btn-block" ng-click="c.addItem()" type="submit" value="Generate" style="width:100px;">
+        </td><td>&nbsp;</td>
+      
+        <td>
+          <input class="btn btn-primary btn-block"  ng-click="c.setPath()" type="submit" value="Set Path" style="width:100px;">
+        </td><td>&nbsp;</td>
+        <td>
+           <input class="btn btn-primary btn-block" ng-click="c.submitForApproval()" type="submit" value="Submit For Approval" style="width:150px;" >
+        </td>
+      </tr>   
+   </table>
+      <br><br>
+      <table>
+        <tr>
+        <td>
+        <input class="btn btn-primary btn-block" ng-click="c.modify()" type="submit" value="Back" style="width:100px;" >
+      </td><td>&nbsp;</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+]]></template>
+    </sp_widget>
+</record_update>

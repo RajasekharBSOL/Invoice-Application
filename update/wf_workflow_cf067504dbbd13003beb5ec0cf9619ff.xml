@@ -34,12 +34,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-26 09:31:19</sys_created_on>
         <sys_id>7cdada88dbfd13003beb5ec0cf9619aa</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-26 12:48:28</sys_updated_on>
+        <sys_updated_on>2018-04-30 09:51:31</sys_updated_on>
         <table>x_220966_invoice_invoice</table>
         <timezone/>
-        <validated>false</validated>
+        <validated>true</validated>
         <workflow display_value="Invoice Workflow">cf067504dbbd13003beb5ec0cf9619ff</workflow>
     </wf_workflow_version>
     <wf_workflow action="INSERT_OR_UPDATE">

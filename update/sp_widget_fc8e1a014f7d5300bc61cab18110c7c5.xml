@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+	var c = this;	
+
+	c.prepareInvoice = function() {						
+	//	alert("inside total");
+
+    var URL = "?id=create_invoice";
+   // alert("You are being redirected to the SailPoint site.");
+     top.window.location = URL;
+	
+	}
+
+	c.getTotal=function(){
+			c.server.update().then(function(data) {		
+			console.log("message", data.notes)
+			alert("client="+data.notes);
+		})		
+		
+	}
+	
+}
+
+
+
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>invoice_prepare</id>
+        <internal>false</internal>
+        <link/>
+        <name>invoice prepare</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[
+
+
+(function() {
+//create an array to populate without notes
+data.notes = [];
+var noteGR = new GlideRecord('x_220966_invoice_item_details');
+noteGR.query();
+
+while (noteGR.next()) {
+var noteObj = {};
+//use service portal helper method to get some display values
+
+	$sp.getRecordDisplayValues(noteObj, noteGR, 'number,item_name,item_cost');
+
+//push the populated obj into the array
+data.notes.push(noteObj);
+}
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-29 12:21:21</sys_created_on>
+        <sys_id>fc8e1a014f7d5300bc61cab18110c7c5</sys_id>
+        <sys_mod_count>140</sys_mod_count>
+        <sys_name>invoice prepare</sys_name>
+        <sys_package display_value="Invoice Application" source="x_220966_invoice">460739e3db2113003beb5ec0cf961939</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Invoice Application">460739e3db2113003beb5ec0cf961939</sys_scope>
+        <sys_update_name>sp_widget_fc8e1a014f7d5300bc61cab18110c7c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-29 17:00:58</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="form-group"> 
+    <table>
+      <tr><th>Select</th><td>&emsp;&emsp;</td>
+         <th>Invoice No.</th><td>&emsp;&emsp;</td>
+         <th>Item Name</th><td>&emsp;&emsp;</td>
+         <th>Item Cost</th><td>&emsp;&emsp;</td>
+     </tr>
+      <tr   ng-repeat="x in c.data.notes" >
+       <td><input type="checkbox"></td> <td>&emsp;&emsp;</td>
+        <td>{{x.number}}</td><td>&emsp;&emsp;</td>
+        <td>{{x.item_name}}</td><td>&emsp;&emsp;</td>
+        <td>${{x.item_cost}}</td><td>&emsp;&emsp;</td>
+         
+  
+     </tr>
+   <tr> </tr><tr> </tr>
+     <tr>
+      
+      <td>Total</td><td>&emsp;</td>
+       <td>${{ c.getTotal() }}</td>
+      </tr>
+      </table><br><br>
+      <table>
+     <tr>
+        <td>
+          <input class="btn btn-primary btn-block" ng-click="c.prepareInvoice()" type="submit" value="Prepare Invoice" style="width:150px; height:20">
+       
+           </td><td>&nbsp;</td>
+    
+      </tr>   
+   </table>
+    </div>
+  </div>
+</div>
+
+]]></template>
+    </sp_widget>
+</record_update>

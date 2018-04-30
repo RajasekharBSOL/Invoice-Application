@@ -26,6 +26,8 @@
         <element>u_assigned_group</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
         <internal_type display_value="Reference">reference</internal_type>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
@@ -47,7 +49,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-25 06:30:02</sys_created_on>
-        <sys_id>ef843a58dbf553003beb5ec0cf96192b</sys_id>
+        <sys_id>fc534f194fb59300bc61cab18110c736</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Assigned Group</sys_name>
         <sys_package display_value="Invoice Application" source="x_220966_invoice">460739e3db2113003beb5ec0cf961939</sys_package>
@@ -55,7 +57,7 @@
         <sys_scope display_value="Invoice Application">460739e3db2113003beb5ec0cf961939</sys_scope>
         <sys_update_name>sys_dictionary_x_220966_invoice_invoice_u_assigned_group</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-04-27 06:02:16</sys_updated_on>
+        <sys_updated_on>2018-04-30 09:40:43</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

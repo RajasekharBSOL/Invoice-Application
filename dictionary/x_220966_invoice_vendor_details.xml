@@ -2,8 +2,9 @@
 <database>
     <element label="Vendor Details" max_length="40" name="x_220966_invoice_vendor_details" type="collection">
         <element label="Address2" max_length="100" name="address2" type="string"/>
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Vendor ID" max_length="40" name="number" type="string"/>
         <element label="Address1" max_length="100" name="vendor_address1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Address 2" max_length="100" name="vendor_address2" type="string"/>
         <element label="Address3" max_length="100" name="vendor_address3" type="string"/>
         <element label="EMail" max_length="90" name="vendor_email" type="string"/>
         <element label="First Name" max_length="20" name="vendor_first_name" type="string"/>
