@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"ends":["6979e3d0db7953003beb5ec0cf9619ed"],"activities":{},"subflows":["5dbba714db7953003beb5ec0cf96196d"],"stages":{}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type>run_match</condition_type>
+        <description/>
+        <expected_sequences>ad79e3d0db7953003beb5ec0cf9619eb,2d79e3d0db7953003beb5ec0cf9619ec,ebdd6b54db7953003beb5ec0cf961969,6979e3d0db7953003beb5ec0cf9619ed</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>ad79e3d0db7953003beb5ec0cf9619eb,2d79e3d0db7953003beb5ec0cf9619ec,ebdd6b54db7953003beb5ec0cf961969,6979e3d0db7953003beb5ec0cf9619ed</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Test Workflow</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">ad79e3d0db7953003beb5ec0cf9619eb</start>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 09:53:22</sys_created_on>
+        <sys_id>a979e3d0db7953003beb5ec0cf9619ea</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-30 06:26:04</sys_updated_on>
+        <table>global</table>
+        <timezone/>
+        <validated>false</validated>
+        <workflow display_value="Test Workflow">a4962b50db7953003beb5ec0cf96199f</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>Test Workflow</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 09:40:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a4962b50db7953003beb5ec0cf96199f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test Workflow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Invoice Application" source="x_220966_invoice">460739e3db2113003beb5ec0cf961939</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Invoice Application">460739e3db2113003beb5ec0cf961939</sys_scope>
+        <sys_update_name>wf_workflow_a4962b50db7953003beb5ec0cf96199f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-27 09:40:44</sys_updated_on>
+        <table>global</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 09:53:22</sys_created_on>
+        <sys_id>ad79e3d0db7953003beb5ec0cf9619eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-27 09:53:22</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Test Workflow">a979e3d0db7953003beb5ec0cf9619ea</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=ad79e3d0db7953003beb5ec0cf9619eb"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">ad79e3d0db7953003beb5ec0cf9619eb</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 09:53:22</sys_created_on>
+        <sys_id>2579e3d0db7953003beb5ec0cf9619ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-27 09:53:22</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 09:53:22</sys_created_on>
+        <sys_id>6979e3d0db7953003beb5ec0cf9619ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-27 09:53:22</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Test Workflow">a979e3d0db7953003beb5ec0cf9619ea</workflow_version>
+        <x>932</x>
+        <y>460</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=6979e3d0db7953003beb5ec0cf9619ed"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>test script</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 09:53:22</sys_created_on>
+        <sys_id>2d79e3d0db7953003beb5ec0cf9619ec</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-27 10:01:30</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Test Workflow">a979e3d0db7953003beb5ec0cf9619ea</workflow_version>
+        <x>223</x>
+        <y>49</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=2d79e3d0db7953003beb5ec0cf9619ec"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2d79e3d0db7953003beb5ec0cf9619ec</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 09:53:22</sys_created_on>
+        <sys_id>ad79e3d0db7953003beb5ec0cf9619ec</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-27 09:58:20</sys_updated_on>
+        <value>var count=0;&#13;
+var name="";&#13;
+var amount="";</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2d79e3d0db7953003beb5ec0cf9619ec</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 09:53:22</sys_created_on>
+        <sys_id>ad79e3d0db7953003beb5ec0cf9619ec</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-27 09:58:20</sys_updated_on>
+        <value>var count=0;&#13;
+var name="";&#13;
+var amount="";</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="test script">2d79e3d0db7953003beb5ec0cf9619ec</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 09:53:22</sys_created_on>
+        <sys_id>e179e3d0db7953003beb5ec0cf9619ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-27 09:53:22</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Workflow">f1afb4010a0a0b2c00d8f55e2372c728</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>7</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Test sub workflow</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 10:12:37</sys_created_on>
+        <sys_id>ebdd6b54db7953003beb5ec0cf961969</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-27 10:12:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Test Workflow">a979e3d0db7953003beb5ec0cf9619ea</workflow_version>
+        <x>513</x>
+        <y>83</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=ebdd6b54db7953003beb5ec0cf961969"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ebdd6b54db7953003beb5ec0cf961969</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 10:12:37</sys_created_on>
+        <sys_id>63dd6b54db7953003beb5ec0cf96196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-27 10:12:37</sys_updated_on>
+        <value>b27d2b14db7953003beb5ec0cf961963</value>
+        <variable display_value="">f25501290a0a0b2c005133d3fe2841b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ebdd6b54db7953003beb5ec0cf961969</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 10:12:37</sys_created_on>
+        <sys_id>63dd6b54db7953003beb5ec0cf96196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-27 10:12:37</sys_updated_on>
+        <value>b27d2b14db7953003beb5ec0cf961963</value>
+        <variable display_value="">f25501290a0a0b2c005133d3fe2841b3</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Test sub workflow">ebdd6b54db7953003beb5ec0cf961969</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 10:12:37</sys_created_on>
+        <sys_id>67dd6b54db7953003beb5ec0cf96196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-27 10:12:37</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">2579e3d0db7953003beb5ec0cf9619ec</condition>
+        <from display_value="Begin">ad79e3d0db7953003beb5ec0cf9619eb</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 09:53:22</sys_created_on>
+        <sys_id>e57967d0db7953003beb5ec0cf9619c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-27 09:53:22</sys_updated_on>
+        <to display_value="test script">2d79e3d0db7953003beb5ec0cf9619ec</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">e179e3d0db7953003beb5ec0cf9619ed</condition>
+        <from display_value="test script">2d79e3d0db7953003beb5ec0cf9619ec</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 09:53:22</sys_created_on>
+        <sys_id>e97967d0db7953003beb5ec0cf9619c0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-27 10:12:38</sys_updated_on>
+        <to display_value="Test sub workflow">ebdd6b54db7953003beb5ec0cf961969</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">67dd6b54db7953003beb5ec0cf96196a</condition>
+        <from display_value="Test sub workflow">ebdd6b54db7953003beb5ec0cf961969</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 10:12:38</sys_created_on>
+        <sys_id>fbdd2b14db7953003beb5ec0cf961987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-27 10:12:38</sys_updated_on>
+        <to display_value="End">6979e3d0db7953003beb5ec0cf9619ed</to>
+    </wf_transition>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_workflow_instance</document>
+        <document_key>b27d2b14db7953003beb5ec0cf961963</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 10:12:37</sys_created_on>
+        <sys_id>2fdd2b14db7953003beb5ec0cf961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-27 10:12:37</sys_updated_on>
+        <value>${name}</value>
+        <variable display_value="">1b4d2754db7953003beb5ec0cf9619cb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_workflow_instance</document>
+        <document_key>b27d2b14db7953003beb5ec0cf961963</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 10:12:37</sys_created_on>
+        <sys_id>efdd2b14db7953003beb5ec0cf961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-27 10:12:37</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">957caf14db7953003beb5ec0cf961987</variable>
+    </sys_variable_value>
+    <wf_workflow_instance action="INSERT_OR_UPDATE">
+        <activity display_value="Test sub workflow">ebdd6b54db7953003beb5ec0cf961969</activity>
+        <return_map>${name}</return_map>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 10:12:37</sys_created_on>
+        <sys_id>b27d2b14db7953003beb5ec0cf961963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-27 10:12:37</sys_updated_on>
+        <workflow display_value="Test sub workflow">5dbba714db7953003beb5ec0cf96196d</workflow>
+        <workflow_version display_value="Test Workflow">a979e3d0db7953003beb5ec0cf9619ea</workflow_version>
+    </wf_workflow_instance>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-27 09:53:22</sys_created_on>
+        <sys_id>2d79e3d0db7953003beb5ec0cf9619ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-27 09:53:22</sys_updated_on>
+        <workflow_version display_value="Test Workflow">a979e3d0db7953003beb5ec0cf9619ea</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=a4962b50db7953003beb5ec0cf96199f^sys_id!=a979e3d0db7953003beb5ec0cf9619ea">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

@@ -31,8 +31,6 @@
         <element>selected_item_cost</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
         <internal_type display_value="">float</internal_type>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
@@ -54,7 +52,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-27 03:33:02</sys_created_on>
-        <sys_id>90530f194fb59300bc61cab18110c7ce</sys_id>
+        <sys_id>ec60139ddbf1d3003beb5ec0cf9619c6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Cost</sys_name>
         <sys_package display_value="Invoice Application" source="x_220966_invoice">460739e3db2113003beb5ec0cf961939</sys_package>
@@ -62,7 +60,7 @@
         <sys_scope display_value="Invoice Application">460739e3db2113003beb5ec0cf961939</sys_scope>
         <sys_update_name>sys_dictionary_x_220966_invoice_selected_items_selected_item_cost</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-04-30 09:40:44</sys_updated_on>
+        <sys_updated_on>2018-04-30 10:37:48</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
