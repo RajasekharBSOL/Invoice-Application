@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
-        <category>custom</category>
         <client_script><![CDATA[function() {
   /* widget controller */
   var c = this;
@@ -13,7 +12,7 @@
 				console.log("Receiver Data",a);
 		c.data.abc.push(a);
 		console.log("Data After Pushing",c.data.abc);
-		
+		c.checktable = 0;
 	}
 	
 	
@@ -40,14 +39,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-05-02 06:02:41</sys_created_on>
         <sys_id>4f94248a4f391300bc61cab18110c761</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>invoice setpath</sys_name>
         <sys_package display_value="Invoice Application" source="x_220966_invoice">460739e3db2113003beb5ec0cf961939</sys_package>
         <sys_policy/>
         <sys_scope display_value="Invoice Application">460739e3db2113003beb5ec0cf961939</sys_scope>
         <sys_update_name>sp_widget_4f94248a4f391300bc61cab18110c761</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-02 06:04:24</sys_updated_on>
+        <sys_updated_on>2018-05-02 06:37:40</sys_updated_on>
         <template><![CDATA[<div class="panel panel-default">
   <div class="panel-body">
     <div class="form-group"> 
@@ -77,18 +76,19 @@
         <td>
           <input class="btn btn-primary btn-block" ng-click="c.addApprover(c.data)" type="submit" value="Add" style="width:100px;">
         </td><td>&nbsp;</td>
-           {{data.abc}}
-      </tr>   
+                 </tr>   
    </table>
       <br><br>
-     <table>
-        <tr>
-        <td>
-          
-
-          </td><td>&nbsp;</td>
-        </tr>
-      </table>
+     <table ng-if = "c.checktable == 0" name="items" class="table table-responsive table-striped table-hover table-bordered bg-white-only table-sm">
+      <tr>
+        <th> Manager</th>
+        <th> Order</th>
+      </tr>
+         <tr ng-repeat="n in c.data.abc">
+            <td>{{n.approver}}</td>
+            <td>{{n.order}}</td>
+          </tr>
+    </table>
     </div>
   </div>
 </div>]]></template>
