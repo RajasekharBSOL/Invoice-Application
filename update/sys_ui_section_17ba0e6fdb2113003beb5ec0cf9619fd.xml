@@ -5,13 +5,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-25 11:10:51</sys_created_on>
-            <sys_id>dd0825b3dbe513003beb5ec0cf96196d</sys_id>
+            <sys_created_on>2018-05-01 11:02:38</sys_created_on>
+            <sys_id>87af5c754f311300bc61cab18110c79e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Invoice Details" display_value="Invoice Details" name="x_220966_invoice_invoice" sys_domain="global" view="Default view">17ba0e6fdb2113003beb5ec0cf9619fd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-25 11:10:51</sys_updated_on>
+            <sys_updated_on>2018-05-01 11:02:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -19,13 +19,13 @@
             <element>u_invoice_type</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-25 11:10:51</sys_created_on>
-            <sys_id>550825b3dbe513003beb5ec0cf96196e</sys_id>
+            <sys_created_on>2018-05-01 11:02:38</sys_created_on>
+            <sys_id>4faf5c754f311300bc61cab18110c79e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Invoice Details" display_value="Invoice Details" name="x_220966_invoice_invoice" sys_domain="global" view="Default view">17ba0e6fdb2113003beb5ec0cf9619fd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-25 11:10:51</sys_updated_on>
+            <sys_updated_on>2018-05-01 11:02:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -33,13 +33,13 @@
             <element>u_invoice_amount</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-25 11:10:51</sys_created_on>
-            <sys_id>d50825b3dbe513003beb5ec0cf96196e</sys_id>
+            <sys_created_on>2018-05-01 11:02:38</sys_created_on>
+            <sys_id>cfaf5c754f311300bc61cab18110c79e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Invoice Details" display_value="Invoice Details" name="x_220966_invoice_invoice" sys_domain="global" view="Default view">17ba0e6fdb2113003beb5ec0cf9619fd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-25 11:10:51</sys_updated_on>
+            <sys_updated_on>2018-05-01 11:02:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -47,83 +47,167 @@
             <element>short_description</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-25 11:10:51</sys_created_on>
-            <sys_id>590825b3dbe513003beb5ec0cf96196e</sys_id>
+            <sys_created_on>2018-05-01 11:02:38</sys_created_on>
+            <sys_id>0baf5c754f311300bc61cab18110c7ab</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Invoice Details" display_value="Invoice Details" name="x_220966_invoice_invoice" sys_domain="global" view="Default view">17ba0e6fdb2113003beb5ec0cf9619fd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-25 11:10:51</sys_updated_on>
+            <sys_updated_on>2018-05-01 11:02:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>description</element>
+            <element>u_invoice_vendor</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-25 11:10:51</sys_created_on>
-            <sys_id>d90825b3dbe513003beb5ec0cf96196e</sys_id>
+            <sys_created_on>2018-05-01 11:02:38</sys_created_on>
+            <sys_id>8baf5c754f311300bc61cab18110c7ab</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Invoice Details" display_value="Invoice Details" name="x_220966_invoice_invoice" sys_domain="global" view="Default view">17ba0e6fdb2113003beb5ec0cf9619fd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-25 11:10:51</sys_updated_on>
+            <sys_updated_on>2018-05-01 11:02:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>address1</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-01 11:02:38</sys_created_on>
+            <sys_id>0faf5c754f311300bc61cab18110c7ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Invoice Details" display_value="Invoice Details" name="x_220966_invoice_invoice" sys_domain="global" view="Default view">17ba0e6fdb2113003beb5ec0cf9619fd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-01 11:02:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>address2</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-01 11:02:38</sys_created_on>
+            <sys_id>8faf5c754f311300bc61cab18110c7ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Invoice Details" display_value="Invoice Details" name="x_220966_invoice_invoice" sys_domain="global" view="Default view">17ba0e6fdb2113003beb5ec0cf9619fd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-01 11:02:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>address3</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-01 11:02:38</sys_created_on>
+            <sys_id>03af5c754f311300bc61cab18110c7ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Invoice Details" display_value="Invoice Details" name="x_220966_invoice_invoice" sys_domain="global" view="Default view">17ba0e6fdb2113003beb5ec0cf9619fd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-01 11:02:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>5</position>
+            <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-25 11:10:51</sys_created_on>
-            <sys_id>5d0825b3dbe513003beb5ec0cf96196e</sys_id>
+            <sys_created_on>2018-05-01 11:02:38</sys_created_on>
+            <sys_id>83af5c754f311300bc61cab18110c7ac</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Invoice Details" display_value="Invoice Details" name="x_220966_invoice_invoice" sys_domain="global" view="Default view">17ba0e6fdb2113003beb5ec0cf9619fd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-25 11:10:51</sys_updated_on>
+            <sys_updated_on>2018-05-01 11:02:38</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_due_date</element>
-            <position>6</position>
+            <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-25 11:10:51</sys_created_on>
-            <sys_id>dd0825b3dbe513003beb5ec0cf96196e</sys_id>
+            <sys_created_on>2018-05-01 11:02:38</sys_created_on>
+            <sys_id>07af5c754f311300bc61cab18110c7ac</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Invoice Details" display_value="Invoice Details" name="x_220966_invoice_invoice" sys_domain="global" view="Default view">17ba0e6fdb2113003beb5ec0cf9619fd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-25 11:10:51</sys_updated_on>
+            <sys_updated_on>2018-05-01 11:02:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_invoice_for</element>
-            <position>7</position>
+            <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-25 11:10:51</sys_created_on>
-            <sys_id>510825b3dbe513003beb5ec0cf96196f</sys_id>
+            <sys_created_on>2018-05-01 11:02:38</sys_created_on>
+            <sys_id>87af5c754f311300bc61cab18110c7ac</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Invoice Details" display_value="Invoice Details" name="x_220966_invoice_invoice" sys_domain="global" view="Default view">17ba0e6fdb2113003beb5ec0cf9619fd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-25 11:10:51</sys_updated_on>
+            <sys_updated_on>2018-05-01 11:02:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_invoice_status</element>
-            <position>8</position>
+            <position>11</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-25 11:10:51</sys_created_on>
-            <sys_id>d10825b3dbe513003beb5ec0cf96196f</sys_id>
+            <sys_created_on>2018-05-01 11:02:38</sys_created_on>
+            <sys_id>0baf5c754f311300bc61cab18110c7ac</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Invoice Details" display_value="Invoice Details" name="x_220966_invoice_invoice" sys_domain="global" view="Default view">17ba0e6fdb2113003beb5ec0cf9619fd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-25 11:10:51</sys_updated_on>
+            <sys_updated_on>2018-05-01 11:02:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-01 11:02:38</sys_created_on>
+            <sys_id>8baf5c754f311300bc61cab18110c7ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Invoice Details" display_value="Invoice Details" name="x_220966_invoice_invoice" sys_domain="global" view="Default view">17ba0e6fdb2113003beb5ec0cf9619fd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-01 11:02:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pin_code</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-01 11:02:38</sys_created_on>
+            <sys_id>0faf5c754f311300bc61cab18110c7ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Invoice Details" display_value="Invoice Details" name="x_220966_invoice_invoice" sys_domain="global" view="Default view">17ba0e6fdb2113003beb5ec0cf9619fd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-01 11:02:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>e_mail</element>
+            <position>14</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-01 11:02:38</sys_created_on>
+            <sys_id>8faf5c754f311300bc61cab18110c7ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Invoice Details" display_value="Invoice Details" name="x_220966_invoice_invoice" sys_domain="global" view="Default view">17ba0e6fdb2113003beb5ec0cf9619fd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-01 11:02:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

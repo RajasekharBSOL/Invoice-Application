@@ -20,8 +20,6 @@
         <query/>
         <report/>
         <roles>x_220966_invoice.selected_items_user</roles>
-        <survey/>
-        <survey_overwrite>false</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-27 03:27:26</sys_created_on>

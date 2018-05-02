@@ -26,6 +26,8 @@
         <element>u_due_date</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
         <internal_type display_value="">glide_date</internal_type>
         <mandatory>true</mandatory>
         <max_length>40</max_length>
@@ -47,7 +49,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-25 06:14:11</sys_created_on>
-        <sys_id>35b554c2db3517003beb5ec0cf961992</sys_id>
+        <sys_id>e906284e4f391300bc61cab18110c702</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Due Date</sys_name>
         <sys_package display_value="Invoice Application" source="x_220966_invoice">460739e3db2113003beb5ec0cf961939</sys_package>
@@ -55,7 +57,7 @@
         <sys_scope display_value="Invoice Application">460739e3db2113003beb5ec0cf961939</sys_scope>
         <sys_update_name>sys_dictionary_x_220966_invoice_invoice_u_due_date</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-05-02 04:57:39</sys_updated_on>
+        <sys_updated_on>2018-05-02 06:08:55</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

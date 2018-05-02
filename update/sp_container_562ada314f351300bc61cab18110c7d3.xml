@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color>#ffffff</background_color>
+        <background_image/>
+        <background_style>contain</background_style>
+        <bootstrap_alt>true</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Invoice App - Container 1</name>
+        <order>1</order>
+        <sp_page display_value="invoice_app_index">4c2dcb144fb51300bc61cab18110c72f</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-01 19:57:47</sys_created_on>
+        <sys_id>562ada314f351300bc61cab18110c7d3</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Invoice App - Container 1</sys_name>
+        <sys_package display_value="Invoice Application" source="x_220966_invoice">460739e3db2113003beb5ec0cf961939</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Invoice Application">460739e3db2113003beb5ec0cf961939</sys_scope>
+        <sys_update_name>sp_container_562ada314f351300bc61cab18110c7d3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-01 20:26:01</sys_updated_on>
+        <title>We are Happy to see you</title>
+        <width>container</width>
+    </sp_container>
+</record_update>

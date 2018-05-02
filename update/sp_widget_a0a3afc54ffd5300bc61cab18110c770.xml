@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
         <client_script><![CDATA[function() {
   /* widget controller */
   var c = this;
-	var data=0;	 var d=0;
+	var data=0;	
 //ng-change on change of data it will give the total
 	c.checkData = function(item)
     {
@@ -22,9 +23,9 @@
 	
 //link for the Prepare Invoice button redirecting
 c.prepareInvoice=function(){
-	alert(data+"data");
-	c.data.total1=0;
-	c.data.total1=data;
+	//alert(data+"data");
+	//c.data.total1=0;
+	//c.data.total1=data;
 	localStorage.setItem('total1',data);
 	var URL="?id=create_invoice";
   top.window.location=URL;
@@ -76,17 +77,21 @@ data.items.push(itemsObj);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-29 17:23:21</sys_created_on>
         <sys_id>a0a3afc54ffd5300bc61cab18110c770</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>55</sys_mod_count>
         <sys_name>invoice preparation</sys_name>
         <sys_package display_value="Invoice Application" source="x_220966_invoice">460739e3db2113003beb5ec0cf961939</sys_package>
         <sys_policy/>
         <sys_scope display_value="Invoice Application">460739e3db2113003beb5ec0cf961939</sys_scope>
         <sys_update_name>sp_widget_a0a3afc54ffd5300bc61cab18110c770</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-30 09:33:57</sys_updated_on>
+        <sys_updated_on>2018-05-01 19:38:13</sys_updated_on>
         <template><![CDATA[<div class="panel panel-default">
   <div class="panel-body">
     <div class="form-group"> 
+     
+      <h1><center><b> Prepare Invoice Amount</b> </center></h1> 
+     
+      <br><br>
     <table name="items" class="table table-responsive table-striped table-hover table-bordered bg-white-only table-sm">
       <tr>
         <th> Item Number</th>
@@ -97,14 +102,14 @@ data.items.push(itemsObj);
          <tr ng-repeat="item in c.data.items">
             <td>{{item.number}}</td>
             <td>{{item.item_name}}</td>
-            <td>{{item.item_cost}}</td>
+            <td>${{item.item_cost}}</td>
            <td><input type="checkbox" ng-model="item.check" ng-change="c.checkData(data.items)" /></td>
       </tr>
     </table>
+     
+      Items total &emsp;  <input type="text" ng-model="c.data.total"/>
       
-           Item total &emsp;  ${{c.data.total}} <br>
-           Item total Sending ::&emsp;${{c.data.total1}}
-      
+       <br> <br>
     <table>
      <tr>
         <td>
