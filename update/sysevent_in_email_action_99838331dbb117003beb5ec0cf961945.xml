@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>false</active>
+        <assignment_operator/>
+        <condition_script/>
+        <description/>
+        <event_name>email.read</event_name>
+        <filter_condition/>
+        <from/>
+        <name>Spot Invoice</name>
+        <order>10</order>
+        <reply_email/>
+        <required_roles>x_220966_invoice.Manager</required_roles>
+        <script><![CDATA[(function runAction(/*GlideRecord*/ current, /*GlideRecord*/ event, /*EmailWrapper*/ email, /*ScopedEmailLogger*/ logger, /*EmailClassifier*/ classifier) {
+
+	var emailBody= email.body_text;
+	current.u_invoice_type="Spot Invoice";
+	if(emailBody.includes('Amount:')){
+		current.u_invoice_amount=emailBody.substring(emailBody.indexOf("Amount:"),10);
+	}
+
+})(current, event, email, logger, classifier);]]></script>
+        <stop_processing>false</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-01 23:06:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>99838331dbb117003beb5ec0cf961945</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Spot Invoice</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Invoice Application" source="x_220966_invoice">460739e3db2113003beb5ec0cf961939</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Invoice Application">460739e3db2113003beb5ec0cf961939</sys_scope>
+        <sys_update_name>sysevent_in_email_action_99838331dbb117003beb5ec0cf961945</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-01 23:10:09</sys_updated_on>
+        <table>x_220966_invoice_invoice</table>
+        <template>sys_created_byDYNAMIC2fd8e97bef3221002841f7f775c0fbc1^EQ</template>
+        <type>new</type>
+    </sysevent_in_email_action>
+</record_update>

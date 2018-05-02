@@ -47,15 +47,15 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-25 06:14:11</sys_created_on>
-        <sys_id>3860539ddbf1d3003beb5ec0cf961929</sys_id>
+        <sys_id>b1b554c2db3517003beb5ec0cf961998</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Invoice For</sys_name>
         <sys_package display_value="Invoice Application" source="x_220966_invoice">460739e3db2113003beb5ec0cf961939</sys_package>
         <sys_policy/>
         <sys_scope display_value="Invoice Application">460739e3db2113003beb5ec0cf961939</sys_scope>
         <sys_update_name>sys_dictionary_x_220966_invoice_invoice_u_invoice_for</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-30 10:38:03</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-05-02 04:57:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
